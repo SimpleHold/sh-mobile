@@ -1,31 +1,29 @@
 {
-  "name": "@trustwallet/rn-sdk",
-  "version": "0.2.1",
-  "description": "@trustwallet/rn-sdk lets you sign Ethereum transactions and messages with Trust Wallet",
+  "name": "sh-mobile-sdk",
+  "version": "1.0.0",
+  "description": "sh-mobile-sdk SimpleHold mobile SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && tsc --skipLibCheck",
-    "copy:lib": "rm -rf example/lib && mkdir example/lib && cp -R dist example/lib && cp package.json example/lib",
-    "test": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trustwallet/react-native-trust-sdk.git"
+    "url": "git+https://github.com/SimpleHold/sh-mobile-sdk.git"
   },
   "keywords": [
     "react-native",
-    "trust-wallet",
+    "simplehold",
     "ethereum",
     "dapp"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trustwallet/react-native-trust-sdk/issues"
+    "url": "https://github.com/SimpleHold/sh-mobile-sdk/issues"
   },
-  "homepage": "https://github.com/trustwallet/react-native-trust-sdk#readme",
+  "homepage": "https://github.com/SimpleHold/sh-mobile-sdk#readme",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
@@ -45,9 +43,6 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@trustwallet/wallet-core": "^2.3.2",
-    "buffer": "^5.6.0",
-    "ethers": "^5.0.3",
     "url-parse": "^1.4.0"
   },
   "jest": {
